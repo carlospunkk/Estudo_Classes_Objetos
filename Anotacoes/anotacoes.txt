@@ -1,0 +1,22 @@
+// Objetos 
+
+// tipo de objeto 
+interface Carro {
+   nome:string,
+   modelo:string,
+   ano:number
+   
+
+    
+}
+
+//objeto
+const carro:Carro = {
+    nome:'Ferrari',
+    modelo:'z-504',
+    ano:2000
+}
+
+console.log(carro.nome)
+
+
