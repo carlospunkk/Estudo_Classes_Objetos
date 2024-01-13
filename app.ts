@@ -1,62 +1,19 @@
-// trabalhando com classes 
 
 
-class Carro {
-    nome: string
-    ano_fabricacao: number
+import { Carro } from './class/Carro'
+import {AdmCarros} from './class/Adm'
+// Objetos 
+
+const administrador:AdmCarros= new AdmCarros('Corsa',1912)
+
+//console.log(administrador.msg())
 
 
-    // método constructor 
-    constructor(nome: string, anoFabri: number) {
-        this.nome = nome
-        this.ano_fabricacao = anoFabri
-    }
-
-    // método mostrar 
-
-    mostra = () => {
-
-        console.log(this.nome)
-    }
-}
-
-class AdmCarros extends Carro{
-    numeroAdm:number
-
-    constructor(nome:string , anoFabri:number){
-        super(nome,anoFabri)
-        this.numeroAdm = 10
-    }
-
-    // método pegar get 
-    getAdm = () => {
-        console.log(this.numeroAdm)
-    }
-
-    // método para setar propriedade
-    setName = (nome:string):void =>{
-        this.nome = nome
-        console.log('nome alterado com sucesso ' + this.nome)
-    }
-}
+const carros:Carro = new Carro('Uno',1980)
+//carros.msg()
 
 
-const Adm:AdmCarros= new AdmCarros('Corsa',1912)
-//Adm.getAdm()
-Adm.setName('Renault Etios')
-
-
-
-/*
-
-// objeto
-const carro = new Carro('Ferrari', 1980)
-carro.mostra()
-
-
-// outro objeto
-
-const otherobjct = new Carro('Corcel', 1970)
-otherobjct.mostra()
-
-*/
+// exemplo readonly pde ser acessado mas não alterado
+/*const acesso = new Carro('Verona',1800)
+acesso.nome = 'corcel'
+console.log(acesso.nome)*/

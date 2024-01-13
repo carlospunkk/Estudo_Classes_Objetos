@@ -20,3 +20,6 @@ const carro:Carro = {
 console.log(carro.nome)
 
 
+link site treina web 
+https://www.treinaweb.com.br/blog/classes-no-typescript#:~:text=Com%20o%20TypeScript%20podemos%20utilizar,Pessoa{...}%20.
+
